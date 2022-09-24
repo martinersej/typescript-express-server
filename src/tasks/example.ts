@@ -2,11 +2,11 @@ import type Server from "@/types/Server";
 
 module.exports = (server: Server) => {
     return {
-        name: "Test Task",
-        enabled: false,
+        name: "Example task",
+        enabled: true,
         cron: "* * * * *",
         run: async () => {
-            console.log("Test Task Ran");
+            console.log("This task runs every minute.");
         }
     }
 };
