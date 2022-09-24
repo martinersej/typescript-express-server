@@ -8,7 +8,7 @@ This is simple the boilerplate for my projects backend. It's a simple way to get
 4. Setup `prisma/schema.prisma` and run `yarn run prisma:deploy` to deploy the database
 
 
-# How to create a route?'
+# How to create a route?
 All you have to do is create a new `.ts` file in `src/routes` and the route
 will automatically be loaded by the server.
 
