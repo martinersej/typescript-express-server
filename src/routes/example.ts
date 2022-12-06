@@ -5,12 +5,14 @@ const router = require("express").Router();
 
 module.exports = (server: Server) => {
     return {
-        auth: false,
+        auth: 'example',
+        rateLimit: {
+            max: 4
+        },
         router: () => {
             router.get("/", (req: Request, res: Response) => {
-                res.send("Hello World!");
+                res.send('Hello World!');
             });
-            
             return router;
         }
     }
